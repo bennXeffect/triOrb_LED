@@ -46,7 +46,7 @@ void receiveEvent(int byteCount)
   int _ii = 0;
   while (Wire.available())
   {
-    char c = Wire.read();
+    uint8_t c = Wire.read();
     if (_ii < 5)
     {
       LEDcol[_ii] = c;
